@@ -1,0 +1,64 @@
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: ee5a8985-cf05-486e-a524-585a8eb14db8, User Query: hi, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:openai._base_client:Retrying request to /chat/completions in 0.405318 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:openai._base_client:Retrying request to /chat/completions in 10.000000 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:root:Session ID: 1f522a3f-2146-4b94-a705-1bf9a412cfc0, User Query: hello, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:openai._base_client:Retrying request to /chat/completions in 0.436916 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:openai._base_client:Retrying request to /chat/completions in 10.000000 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:root:Session ID: a8f72f27-a636-40a5-acb3-1170d3477ddc, User Query: hi, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: a8f72f27-a636-40a5-acb3-1170d3477ddc, AI Response: Hello! How can I assist you today?
+INFO:root:Session ID: a8f72f27-a636-40a5-acb3-1170d3477ddc, User Query: can you please tell me the skills mentioned in the document?, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:openai._base_client:Retrying request to /chat/completions in 9.000000 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:openai._base_client:Retrying request to /chat/completions in 24.000000 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: a8f72f27-a636-40a5-acb3-1170d3477ddc, AI Response: Certainly! Here are the skills mentioned in the document:
+
+1. **Languages**
+   - Python
+   - SQL
+   - HTML
+
+2. **Frameworks**
+   - TensorFlow/Keras
+   - PyTorch
+   - Pandas
+
+INFO:root:Session ID: a8f72f27-a636-40a5-acb3-1170d3477ddc, User Query: can you summarize the document?, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:openai._base_client:Retrying request to /chat/completions in 8.000000 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: a8f72f27-a636-40a5-acb3-1170d3477ddc, AI Response: Certainly! The document is a professional profile for Danyal Alam, who has expertise in machine learning and artificial intelligence. Danyal has a background in Electrical Communication Engineering from the University of Engineering and Technology Peshawar, with a GPA of
+INFO:root:Session ID: a8f72f27-a636-40a5-acb3-1170d3477ddc, User Query: can you list the above skills again?, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:openai._base_client:Retrying request to /chat/completions in 9.000000 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: a8f72f27-a636-40a5-acb3-1170d3477ddc, AI Response: Of course! Here are the skills listed in the document:
+
+1. **Languages**
+   - Python
+   - SQL
+   - HTML
+
+2. **Frameworks**
+   - TensorFlow/Keras
+   - PyTorch
+   - Pandas
