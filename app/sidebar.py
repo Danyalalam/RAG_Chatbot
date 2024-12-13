@@ -5,7 +5,7 @@ def display_sidebar():
     # Model Selection
     model_options = {
         "GPT-4": "gpt-4",  # Display name : actual value
-        "LLaMA 2": "llama-2",
+        "LLaMA 3.1": "llama-3.1",
         "Claude": "anthropic.claude-v2"
     }
     

@@ -4,8 +4,8 @@ from datetime import datetime
 
 # pydantic_models.py
 class ModelName(str, Enum):
-    GPT4 = "gpt-4"  # Must match exactly what frontend sends
-    LLAMA = "llama-2"
+    GPT4 = "gpt-4"  
+    LLAMA = "llama-3.1"
     BEDROCK = "anthropic.claude-v2"
 
 class QueryInput(BaseModel):

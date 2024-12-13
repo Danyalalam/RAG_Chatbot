@@ -14,5 +14,5 @@ EMBEDDING_DEPLOYMENT = "text-embedding-3-small"
 EMBEDDING_MODEL = "text-embedding-3-small"
 
 # Other Model Configs
-LLAMA_MODEL_PATH = "path/to/llama/model"
-AWS_PROFILE = "default"
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_MODEL_NAME = "llama-3.1-70b-versatile"

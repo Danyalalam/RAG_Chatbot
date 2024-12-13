@@ -62,3 +62,34 @@ INFO:root:Session ID: a8f72f27-a636-40a5-acb3-1170d3477ddc, AI Response: Of cour
    - TensorFlow/Keras
    - PyTorch
    - Pandas
+INFO:root:Session ID: bf329abe-39a4-49f5-8c74-aea3def8b251, User Query: hello, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: bf329abe-39a4-49f5-8c74-aea3def8b251, AI Response: Hello, I'm here to help. You seem to have provided information about Danyal Alam, a machine learning professional. How can I assist you with this information? Are you looking for more details about Danyal Alam's skills or experience?
+INFO:root:Session ID: bf329abe-39a4-49f5-8c74-aea3def8b251, User Query: what is inside the document?, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: bf329abe-39a4-49f5-8c74-aea3def8b251, AI Response: The document appears to be a summary of a machine learning professional's experience and skills. It highlights their expertise in various areas, including:
+
+1. **Convolutional Neural Networks (CNN)**: The document mentions using CNN for scalable and maintainable code with enhanced reproducibility.
+2. **MLOps Integration**: It talks about leveraging MLflow and DVC for experiment tracking and version control, and utilizing Azure CI/CD pipelines for automated deployment.
+3. **Model Deployment**: The document mentions deploying a deep learning model in a Dockerized Flask application, making it accessible via REST API.
+4. **Multi-Lingual AI Assistant**: It describes a project where a versatile AI assistant was developed using Python, capable of speech recognition, text-to-speech, and language translation.
+5. **Natural Language Processing (NLP)**: The document highlights the use of advanced libraries like SpeechRecognition, gTTS, and Google's Generative AI for NLP.
+6. **Experience as a Machine Learning Intern**: It summarizes the professional's experience as a machine learning intern, including developing models using scikit-learn, applying TF-IDF and Bag-of-Words for feature extraction, and implementing CI/CD pipelines using GitHub Actions.
+
+Overall, the document provides an overview of the professional's skills and experience in machine learning, NLP, and MLOps.
+INFO:root:Session ID: 1b144add-9427-4ad1-aa39-3f7e1bc3f6b7, User Query: hello, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+WARNING:chromadb.segment.impl.vector.local_persistent_hnsw:Number of requested results 2 is greater than number of elements in index 0, updating n_results = 0
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 1b144add-9427-4ad1-aa39-3f7e1bc3f6b7, AI Response: Hello! How can I assist you today?
+INFO:root:Session ID: 1b144add-9427-4ad1-aa39-3f7e1bc3f6b7, User Query: what llm model are you?, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+WARNING:chromadb.segment.impl.vector.local_persistent_hnsw:Number of requested results 2 is greater than number of elements in index 0, updating n_results = 0
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:openai._base_client:Retrying request to /chat/completions in 9.000000 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 1b144add-9427-4ad1-aa39-3f7e1bc3f6b7, AI Response: I'm based on OpenAI's technology, but I don't have a specific LLM (Language Learning Model) model designation like GPT-3 or GPT-4. How can I assist you further today?
