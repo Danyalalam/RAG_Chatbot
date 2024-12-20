@@ -1,6 +1,6 @@
 from langchain_openai import ChatOpenAI
 from langchain_core.output_parsers import StrOutputParser
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder,HumanMessagePromptTemplate
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from typing import List
@@ -23,21 +23,21 @@ contextualize_q_system_prompt = (
     "just reformulate it if needed and otherwise return it as is."
 )
 
-contextualize_q_prompt = ChatPromptTemplate.from_messages([
-    ("system", contextualize_q_system_prompt),
-    MessagesPlaceholder("chat_history"),
-    ("human", "{input}"),
-])
-
-
-
 qa_prompt = ChatPromptTemplate.from_messages([
-    ("system", "You are a helpful AI assistant. Use the following context to answer the user's question."),
-    ("system", "Context: {context}"),
-    MessagesPlaceholder(variable_name="chat_history"),
-    ("human", "{input}")
+    HumanMessagePromptTemplate.from_template(
+        "Use the following context to answer the user's question.\nContext: {context}\n\nQuestion: {input}"
+    ),
+    MessagesPlaceholder(variable_name="chat_history")
 ])
 
+contextualize_q_prompt = ChatPromptTemplate.from_messages([
+    HumanMessagePromptTemplate.from_template(
+        "Given a chat history and the latest user question, formulate a standalone question.\n"
+        "Chat history: {chat_history}\n"
+        "User question: {input}\n"
+        "Standalone question:"
+    )
+])
 
 
 from model_factory import ModelFactory

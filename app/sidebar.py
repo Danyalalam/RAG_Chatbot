@@ -6,7 +6,7 @@ def display_sidebar():
     model_options = {
         "GPT-4": "gpt-4",  # Display name : actual value
         "LLaMA 3.1": "llama-3.1",
-        "Claude": "anthropic.claude-v2"
+        "GEMINI": "gemini-pro"
     }
     
     # Get display name from value if exists in session state

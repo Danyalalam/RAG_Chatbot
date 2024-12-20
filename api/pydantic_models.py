@@ -6,7 +6,7 @@ from datetime import datetime
 class ModelName(str, Enum):
     GPT4 = "gpt-4"  
     LLAMA = "llama-3.1"
-    BEDROCK = "anthropic.claude-v2"
+    BEDROCK = "gemini-pro"
 
 class QueryInput(BaseModel):
     question: str

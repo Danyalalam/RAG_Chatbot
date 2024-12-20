@@ -93,3 +93,39 @@ INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deploymen
 INFO:openai._base_client:Retrying request to /chat/completions in 9.000000 seconds
 INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
 INFO:root:Session ID: 1b144add-9427-4ad1-aa39-3f7e1bc3f6b7, AI Response: I'm based on OpenAI's technology, but I don't have a specific LLM (Language Learning Model) model designation like GPT-3 or GPT-4. How can I assist you further today?
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: f453f3a7-5fc2-4048-b583-b65d543940fa, User Query: what is the document about?, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: a95078a1-fc5b-4de7-a026-9aa1253733c4, User Query: hello, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: a95078a1-fc5b-4de7-a026-9aa1253733c4, AI Response: Hello! How can I assist you today?
+INFO:root:Session ID: a95078a1-fc5b-4de7-a026-9aa1253733c4, User Query: hello, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: d5502d8f-4a1b-4528-871a-62e07632f70b, User Query: hello, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: a13dc2c0-af8a-403c-b510-3c4eaf9b71b5, User Query: hello, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: a13dc2c0-af8a-403c-b510-3c4eaf9b71b5, AI Response: Hello. It seems like you've shared your university transcript with me. Is there something specific you'd like to know or discuss about your transcript, or is there another question I can help you with?
+INFO:root:Session ID: 105c54a6-1e1f-44ec-8479-16485163d38e, User Query: hello, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 105c54a6-1e1f-44ec-8479-16485163d38e, AI Response: Hello. It seems like you've shared a transcript from the University of Engineering & Technology, Jalozai Campus, Pakistan. Is there something specific you'd like to know or discuss about this transcript?
+INFO:root:Session ID: 105c54a6-1e1f-44ec-8479-16485163d38e, User Query: what is the final cgpa, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 105c54a6-1e1f-44ec-8479-16485163d38e, AI Response:  
+
+To answer your question, the final CGPA is 3.23.
+INFO:root:Session ID: 105c54a6-1e1f-44ec-8479-16485163d38e, User Query: hello, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 105c54a6-1e1f-44ec-8479-16485163d38e, AI Response: The transcript shows the CGPA progression:
+* **After Fall 2020:** 3.57
+* **After Fall 2021:** 3.20
+* **After Fall 2022:** 3.07
+* **After Spring 2023:** 3.23
+
+The last CGPA listed is after Spring 2023, which is 3.23.
+

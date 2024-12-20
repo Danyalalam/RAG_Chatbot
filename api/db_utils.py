@@ -33,8 +33,8 @@ def get_chat_history(session_id):
     messages = []
     for row in cursor.fetchall():
         messages.extend([
-            {"role": "human", "content": row['user_query']},
-            {"role": "ai", "content": row['gpt_response']}
+            {"role": "user", "content": row['user_query']},
+            {"role": "assistant", "content": row['gpt_response']}
         ])
     conn.close()
     return messages
