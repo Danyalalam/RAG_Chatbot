@@ -1,0 +1,12 @@
+-- -- Create table for model evaluations
+-- CREATE TABLE IF NOT EXISTS model_evaluations (
+--     id INTEGER PRIMARY KEY AUTOINCREMENT,
+--     model TEXT NOT NULL,
+--     question TEXT NOT NULL,
+--     answer TEXT NOT NULL,
+--     response_time FLOAT NOT NULL,
+--     tokens_used INTEGER NOT NULL,
+--     relevance_score FLOAT NOT NULL,
+--     citation_accuracy FLOAT NOT NULL,
+--     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+-- );

@@ -8,6 +8,27 @@ def get_db_connection():
     conn.row_factory = sqlite3.Row
     return conn
 
+
+def insert_evaluation_record(model: str, question: str, answer: str, response_time: float,
+                             tokens_used: int, relevance_score: float, citation_accuracy: float):
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute('''
+        INSERT INTO model_evaluations 
+        (model, question, answer, response_time, tokens_used, relevance_score, citation_accuracy)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+    ''', (model, question, answer, response_time, tokens_used, relevance_score, citation_accuracy))
+    conn.commit()
+    conn.close()
+
+def fetch_all_evaluations() -> list:
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute('SELECT * FROM model_evaluations ORDER BY timestamp DESC')
+    evaluations = cursor.fetchall()
+    conn.close()
+    return evaluations
+
 def create_application_logs():
     conn = get_db_connection()
     conn.execute('''CREATE TABLE IF NOT EXISTS application_logs
