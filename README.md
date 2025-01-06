@@ -44,6 +44,7 @@ pip install -r requirements.txt
 ```
 
 4. Set up environment variables:
-
+```bash
 copy .env.example .env
 # Edit .env with your API keys
+```
