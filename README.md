@@ -29,5 +29,21 @@ RAG_Chatbot/ ├── api/ │ ├── main.py # FastAPI backend │ ├─�
 ```bash
 git clone https://github.com/yourusername/RAG_Chatbot.git
 cd RAG_Chatbot
+```
 
-Create and activate virtual environment:
+2. Create and activate virtual environment:
+```bash
+python -m venv venv
+.\venv\Scripts\activate
+```
+
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Set up environment variables:
+
+copy .env.example .env
+# Edit .env with your API keys
