@@ -24,7 +24,7 @@ class ModelFactory:
                 )
             elif model_name == "claude":
                 return ChatAnthropic(
-                    model="claude-3.5-sonnet-20240620",
+                    model="claude-3-5-sonnet-20240620",
                     temperature=0.2,
                     max_tokens=1024,
                     timeout=None,
