@@ -6,7 +6,7 @@ from typing import Optional, Dict, List
 class ModelName(str, Enum):
     GPT4 = "gpt-4"  
     LLAMA = "llama-3.1"
-    GEMINI = "gemini-pro"
+    CLAUDE = "claude"
 
 class QueryInput(BaseModel):
     question: str

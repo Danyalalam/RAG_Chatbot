@@ -26,7 +26,7 @@ class ModelFactory:
                 return ChatAnthropic(
                     model="claude-3.5-sonnet-20240620",
                     temperature=0.2,
-                    max_tokens=1024,
+                    max_tokens=None,
                     timeout=None,
                     max_retries=2,
                     anthropic_api_key=ANTHROPIC_API_KEY
