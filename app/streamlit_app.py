@@ -1,7 +1,6 @@
 import streamlit as st
 from sidebar import display_sidebar
 from chat_interface import display_chat_interface
-from visualization import display_evaluation_charts
 
 st.title("Multi-Model RAG Chatbot")
 
@@ -17,11 +16,4 @@ if "model" not in st.session_state:
 display_sidebar()
 
 
-# Main Area Navigation
-menu = ["Chat", "Evaluation"]
-choice = st.sidebar.radio("Navigate", menu)
-
-if choice == "Chat":
-    display_chat_interface()
-elif choice == "Evaluation":
-    display_evaluation_charts()
+display_chat_interface()

@@ -260,3 +260,385 @@ INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deploymen
 INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
 INFO:root:Session ID: 033b25dc-af3b-4f5b-971d-57ad20cf8fbf, AI Response: Specific technologies mentioned include Python libraries like `os`, `smbprotocol`, `boto3`, `pynfs`, `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `plotly`, `dash`, `Tkinter`, `PyQt5`, `ReportLab`, and `WeasyPrint`. Storage vendors like NetApp, Dell, Qumulo, and HPE are also mentioned.  The plan leverages AI, potentially decision trees or reinforcement learning, and utilizes a lightweight database like SQLite.
 
+INFO:root:Session ID: e52ac956-5653-4801-9c6a-147741340660, User Query: can you provide the skills mentioned in the document?, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: e52ac956-5653-4801-9c6a-147741340660, AI Response: Based on the provided context, the skills mentioned in the document are related to:
+
+1. Programming: 
+   - Python programming
+   - GUI development (Tkinter or PyQt5)
+
+2. Data Analysis and Science:
+   - Data analysis
+   - Machine learning (pre-trained decision trees or reinforcement learning models)
+   - Data visualization (matplotlib, plotly, or dash)
+
+3. Storage and Networking:
+   - Storage systems (SMB, S3, NFS)
+   - Vendor-specific integrations (NetApp, Dell, Qumulo)
+   - SNMP or CLI Commands
+
+4. Database Management:
+   - Lightweight database management (e.g., SQLite)
+
+5. Reporting and Documentation:
+   - Report generation (ReportLab or WeasyPrint)
+   - PDF generation
+
+6. AI and Modeling:
+   - Training AI models with historical data
+   - Custom log parsing
+   - Rule-based AI for recommendations
+
+7. Cloud and Networking:
+   - APIs/SDKs for storage systems
+   - Cloud storage (S3)
+INFO:root:Session ID: e52ac956-5653-4801-9c6a-147741340660, User Query: can you provide the skills mentioned in the document?, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: e52ac956-5653-4801-9c6a-147741340660, AI Response: 8. Tools and Libraries:
+   - os, smbprotocol, boto3, pynfs
+   - pandas, numpy, scikit-learn
+   - NLTK, spaCy
+   - Docker
+   - AWS/Azure
+   - MLflow
+   - Evidently AI
+   - FastAPI
+   - MongoDB
+   - Git
+   - CI/CD tools (e.g., GitHub Actions)
+
+
+It's important to note that the document focuses on the tools and libraries used, which implies the skills needed to utilize them effectively.  For example, mentioning "pandas, numpy, scikit-learn" suggests skills in data manipulation, analysis, and machine learning using Python.
+
+INFO:root:Session ID: 99d4eabf-dee4-4883-aafc-657f80415829, User Query: can you please summarize the document?, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 99d4eabf-dee4-4883-aafc-657f80415829, AI Response: The document outlines a migration plan that involves collecting and analyzing data from storage systems, using various technical tools and libraries, and providing recommendations for optimizing storage solutions. 
+
+Here's a summary of the key points:
+
+1. **Data Collection**: Utilize vendor-specific SDKs, APIs, and Python libraries (such as os, smbprotocol, boto3, and pynfs) to collect data from storage systems like SMB, S3, and NFS.
+
+2. **Data Analysis**: Leverage libraries like pandas, numpy, and scikit-learn to analyze the collected data, and use pre-trained decision trees or reinforcement learning models for storage recommendations.
+
+3. **Implementation Plan**: The plan consists of three phases:
+   - **Phase 1 (MVP)**: Develop a basic tool to connect to storage systems, fetch and display storage metrics, and output a simple dashboard and CSV report.
+   - **Phase 2**: Add advanced metrics, hot/cold data analysis, and vendor-specific integrations.
+   - **Phase 3**: Integrate AI models trained on historical data, custom log parsing, and SNMP or CLI commands.
+
+4. **Steps**: The plan involves the following steps:
+   - **Step 3**: Store collected metrics in a lightweight database and perform analysis to determine data classification, performance bottlenecks, and cost inefficiencies.
+   - **Step 4**: Use pre-trained models or rule-based AI to recommend solutions, such as Qumulo + HPE All-Flash for hot data and tiering to lower-cost archive storage for cold data.
+   - **Step 5**: Provide interactive dashboards, heatmaps, and savings calculators for visualization.
+   - **Step 6**: Export reports in formats like PDF/CSV, including the current environment overview and proposed solution with savings estimates.
+
+The ultimate goal of the migration plan is to provide a comprehensive solution for optimizing storage systems, including a detailed migration plan with estimated savings.
+INFO:root:Session ID: dcb24b1a-4af6-4979-8ab4-1078f20e790e, User Query: what is inside the document?, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: dcb24b1a-4af6-4979-8ab4-1078f20e790e, AI Response: The document outlines a migration plan that includes the following components:
+
+1. **Technical Tools and Libraries**:
+   - Data Collection: Utilizes APIs/SDKs and Python libraries such as os, smbprotocol, boto3, and pynfs.
+
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 7e512b8f-d328-43ed-9289-d9af379240de, User Query: can you please summarize the document?, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+WARNING:chromadb.segment.impl.vector.local_persistent_hnsw:Number of requested results 5 is greater than number of elements in index 3, updating n_results = 3
+INFO:root:Session ID: 7e512b8f-d328-43ed-9289-d9af379240de, AI Response: The document is a recommendation letter written by a Machine Learning professor for a student named Danyal Alam, endorsing him for the ISTA ISTernship Fellowship. The professor highlights Danyal's academic achievements, technical skills, and enthusiasm for research in
+INFO:root:Session ID: 7e512b8f-d328-43ed-9289-d9af379240de, User Query: so the document has the data related to Internship program?, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+WARNING:chromadb.segment.impl.vector.local_persistent_hnsw:Number of requested results 5 is greater than number of elements in index 3, updating n_results = 3
+INFO:root:Session ID: 7e512b8f-d328-43ed-9289-d9af379240de, AI Response: * **Emerging AI/ML areas:**  Specifically mentioning his work on Retrieval-Augmented Generation (RAG) models, AI agents, and transformer architecture.
+* **Strong theoretical and practical skills:** Emphasizing his ability to understand complex concepts and apply them to practical problems, demonstrated through his coursework in machine learning, including neural networks, computer vision, and natural language processing.
+* **Suitability for the ISTernship:**  Connecting Danyal's skills and drive to the program's focus on interdisciplinary research and collaboration.
+
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 7e512b8f-d328-43ed-9289-d9af379240de, User Query: is there anything mentioned about the Robert Kegan?, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 7e512b8f-d328-43ed-9289-d9af379240de, AI Response: 
+INFO:root:Session ID: 7e512b8f-d328-43ed-9289-d9af379240de, User Query: is there anything mentioned about the Robert Kegan?, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 7e512b8f-d328-43ed-9289-d9af379240de, AI Response: Yes, Robert Kegan is mentioned in the document. On page 46, the author mentions Robert Kegan's work on levels of awareness and the subject-object process. The author finds this area of study interesting and wonders if they could create an equivalent framework for business awareness, with different levels that can be climbed through mastery of specific distinctions.
+INFO:root:Session ID: 7e512b8f-d328-43ed-9289-d9af379240de, User Query: can you give me the summary of page 56?, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:openai._base_client:Retrying request to /chat/completions in 9.000000 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 7e512b8f-d328-43ed-9289-d9af379240de, AI Response: I'm sorry, but I cannot provide a summary of page 56 as it is not included in the pages provided. If you have access to page 56 and can provide the content, I would be happy to help summarize it for you.
+INFO:root:Session ID: 7e512b8f-d328-43ed-9289-d9af379240de, User Query: Delray Backyard
+, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:openai._base_client:Retrying request to /chat/completions in 9.000000 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:openai._base_client:Retrying request to /chat/completions in 49.000000 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 7e512b8f-d328-43ed-9289-d9af379240de, AI Response: The document is a personal journal entry from an individual in Delray Beach, detailing their recent activities and thoughts. The person mentions joining F45 with Elle, enjoying writing during alone time, and preparing for a gathering to watch a Conor McGregor vs. Dustin
+INFO:root:Session ID: b2f84d85-9862-4a6f-afc1-00d27102845d, User Query: Delray Backyard
+, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: b2f84d85-9862-4a6f-afc1-00d27102845d, AI Response: It seems like you're referencing the location and context provided. As of the current time (8:30AM, Friday, March 12/2020), you are in the Delray Beach backyard. However, the notes you've shared are from a different time, specifically July 9, 2019, and July 11 (no year specified, but presumably 2019 based on the context). 
+
+If you're asking about the current situation or what's happening in the Delray Beach backyard at 8:30AM on Friday, March 12/2020, there's no specific information provided in the context about the current activities or events. The previous notes mention plans for a party to watch a Conor McGregor vs. Dustin Poirier fight, going to bed early, and making time for journaling, but these are from a different time. 
+
+Could you please provide more details or clarify your question regarding the Delray Backyard?
+INFO:root:Session ID: b2f84d85-9862-4a6f-afc1-00d27102845d, User Query: is there anything mentioned about Happy
+Father’s Day!, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: b2f84d85-9862-4a6f-afc1-00d27102845d, AI Response: 
+INFO:root:Session ID: b2f84d85-9862-4a6f-afc1-00d27102845d, User Query: is there anything mentioned about Happy Father’s Day!
+
+, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: b2f84d85-9862-4a6f-afc1-00d27102845d, User Query: is there anything mentioned about Happy Father’s Day!
+
+, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:openai._base_client:Retrying request to /chat/completions in 8.000000 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: b2f84d85-9862-4a6f-afc1-00d27102845d, AI Response: No, there is no mention of "Happy Father's Day" in the provided context.
+INFO:root:Session ID: 8b303aef-57d1-4e1e-a2d4-e1f75892c8bf, User Query: AC
+TION CRITERIA FOR
+15 PROBLEM BEHAVIORS, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 8b303aef-57d1-4e1e-a2d4-e1f75892c8bf, AI Response: The Action Criteria for 15 problem behaviors are as follows:
+
+1. Smoking - Abstinence
+2. Drug abuse - Abstinence
+3. Gambling - Abstinence
+4. Alcoholism - Abstinence
+5. Troubled drinking - Abstinence, at times; or no more than 14 drinks per week, with no more than 5 drinks ever at any sitting
+6. Sex (high risk) - Always use condoms
+7. Depression - No more than 2 days of the blues at any time
+8. Panic attacks - No panic attacks in any normal situation
+9. Physical abuse - Never hit anyone and never be hit
+10. Obesity (health criteria) - (No specific action criteria mentioned, but it mentions "Self-Reevaluation")
+
+Additionally, there are six processes for making changes:
+1. Self-Reevaluation
+2. Commitment
+3. Countering
+4. Environment Control
+5. Reward
+6. Helping Relationships
+INFO:root:Session ID: 8b303aef-57d1-4e1e-a2d4-e1f75892c8bf, User Query: 
+===
+Filename: 002
+-
+journal Jan 1997
+-
+July 1997.pdf
+===
+Page: 1 of 98
+
+summarize, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 8b303aef-57d1-4e1e-a2d4-e1f75892c8bf, AI Response: 
+INFO:root:Session ID: 8b303aef-57d1-4e1e-a2d4-e1f75892c8bf, User Query: Tony Robbins, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 8b303aef-57d1-4e1e-a2d4-e1f75892c8bf, AI Response: The provided text appears to be a journal entry from January 1997 to July 1997, with a total of 98 pages. However, only the filename, page number, and a small portion of the text are visible. There is no actual content to summarize. If you could provide more context or the actual journal entry, I would be happy to help summarize it for you.
+INFO:root:Session ID: 8b303aef-57d1-4e1e-a2d4-e1f75892c8bf, User Query: From Tony Robbins Giant Steps #10, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 66047602-8122-48f1-ae01-0f762f9a4c99, User Query: From Tony Robbins Giant Steps #10
+
+, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 66047602-8122-48f1-ae01-0f762f9a4c99, AI Response: I'm sorry, but I can't provide text from Tony Robbins' "Giant Steps #10" as it is copyrighted material. However, I can provide a summary or answer any questions you have about the content. Let me know how I can
+INFO:root:Session ID: 66047602-8122-48f1-ae01-0f762f9a4c99, User Query: give me the summary, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:openai._base_client:Retrying request to /chat/completions in 8.000000 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 66047602-8122-48f1-ae01-0f762f9a4c99, AI Response: We’ve all heard about people who’ve exploded beyond the limitations of their conditions to become examples of the unlimited power of the human spirit.
+
+You and I can make our lives one of these legendary inspirations, as well, simply by having courage and the
+INFO:root:Session ID: 66047602-8122-48f1-ae01-0f762f9a4c99, User Query: From Tony Robbins Giant Steps #10
+
+, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 66047602-8122-48f1-ae01-0f762f9a4c99, AI Response: awareness that we can control whatever happens in our lives. Although we cannot always control the events in our lives, we can always control our response to them, and the actions we take as a result.
+
+If there’s anything you’re not happy about - in your relationships, in your health, in your career - make a decision right now about how you’re going to change it immediately.
+Success and failure are usually not the result of a single event.
+
+Failure is the result of neglecting to make the call… to go the extra mile … to say, “I love you.” In the same way that failure follows this string of small decisions, success comes from taking the initiative and following up… persisting… eloquently expressing the depth of your love.
+
+What simple action could you take today to produce a new momentum toward success in your life?
+
+INFO:root:Session ID: bc5b72ff-3d2e-44b2-b0cc-5e9a894fdb67, User Query: what does the document mentioned about :
+RICH SHEFRI, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: bc5b72ff-3d2e-44b2-b0cc-5e9a894fdb67, AI Response: The document mentions that Rich Schefren threw an in-store party, inviting many potential shoppers, and did not intervene when his father was upset about guests smoking and dropping ashes on the carpet. It also mentions that Rich decided to sell vintage clothing by the
+INFO:root:Session ID: bc5b72ff-3d2e-44b2-b0cc-5e9a894fdb67, User Query: what does the document mentioned about : RICH SHEFRI, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: bc5b72ff-3d2e-44b2-b0cc-5e9a894fdb67, AI Response:  pound and refused to make his customers remove security sensor tags, which would have added a few cents to the weight, in order to not alienate them.
+
+Additionally, the document states that Rich took over the store in 1994, after begging his father for a chance to run it. He and his friend Jay Sternstein moved into the store, replaced the old inventory with new items such as hip-huggers and polyester jackets, and helped turn the business around.
+
+Some of Rich's quotes mentioned in the document include:
+
+* "It was a party. People smoke."
+* "It's like, I'm not going to alienate my customers just for a few cents."
+INFO:root:Session ID: 0cb863d1-2962-4033-b1fc-3fe559b2121e, User Query: what does the document mentioned about : RICH SHEFRI, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 0cb863d1-2962-4033-b1fc-3fe559b2121e, AI Response: The document portrays Rich Schefren as a young entrepreneur who takes over his father's vintage clothing store and modernizes it.  He clashes with his father over his business practices, prioritizing a trendy and customer-friendly atmosphere over his father's more traditional, cost-conscious approach.  Specifically, he:
+
+* **Throws a party** where guests smoke, upsetting his father.
+* **Sells vintage clothing by the pound**, removing security tags to avoid alienating customers, despite his father's concerns about the lost revenue.
+* **Revamps the store's inventory**, replacing outdated items with trendier clothing.
+* **Initially has little interference from his father**, but as the business improves, his father becomes more involved.
+* **Begged his father for a shot at running the store** after a broken heart and restlessness at college.
+* **Moved into the store** with his best friend to dedicate themselves to the business.
+
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 429 Too Many Requests"
+INFO:openai._base_client:Retrying request to /embeddings in 25.000000 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 3354a907-a04d-496f-be9b-912a8e264c1a, User Query: who is rich schefren?, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 3354a907-a04d-496f-be9b-912a8e264c1a, AI Response: Rich Schefren is the son of Harvey Schefren. In 1994, when his father decided to close their store, Rich, who was then a college student in Ohio, asked for a chance to run the operation. He moved into the store with his best friend, Jay Sternstein, and transformed the inventory to appeal to a younger, trendier clientele. Despite initial success and freedom, Rich's business decisions often clashed with his father's more traditional views.
+INFO:root:Session ID: 3354a907-a04d-496f-be9b-912a8e264c1a, User Query: was he enterpreneur?, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 3354a907-a04d-496f-be9b-912a8e264c1a, AI Response: 
+INFO:root:Session ID: 3354a907-a04d-496f-be9b-912a8e264c1a, User Query: was he entrepreneur?, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 3354a907-a04d-496f-be9b-912a8e264c1a, AI Response: Based on the provided context, it appears that the person writing the journal entry is an entrepreneur, but it is not explicitly stated that the person is Rich Schefren. However, in a broader context, Rich Schefren is indeed an entrepreneur, known for his work in the internet marketing space and as the founder of Strategic Profits.
+INFO:root:Session ID: 3354a907-a04d-496f-be9b-912a8e264c1a, User Query: can you mention some of his friends?, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 3354a907-a04d-496f-be9b-912a8e264c1a, User Query: can you mention some of his friends?, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 3354a907-a04d-496f-be9b-912a8e264c1a, User Query: can you mention some of his friends?
+
+, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 3354a907-a04d-496f-be9b-912a8e264c1a, User Query: can you mention some of his friends?
+
+, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 692ef891-8e1a-4666-a61a-371bd0e2ef5f, User Query: who is rich schefren?
+
+, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 692ef891-8e1a-4666-a61a-371bd0e2ef5f, AI Response: Rich Schefren is the son of Harvey Schefren. He took over his father's ailing store in 1994 and, with his friend Jay Sternstein, revamped the inventory and business model. He is described as a young entrepreneur with different tastes and business approaches than his father.
+
+INFO:root:Session ID: 692ef891-8e1a-4666-a61a-371bd0e2ef5f, User Query: can you mention some of his friends?, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 692ef891-8e1a-4666-a61a-371bd0e2ef5f, AI Response: 
+INFO:root:Session ID: 692ef891-8e1a-4666-a61a-371bd0e2ef5f, User Query: was he a entrepreneur?, Model: gemini-pro
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 692ef891-8e1a-4666-a61a-371bd0e2ef5f, User Query: was he a entrepreneur?
+
+, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 692ef891-8e1a-4666-a61a-371bd0e2ef5f, AI Response: From the context given, some of Rich Schefren's friends or associates include Rub, Steve, ROOS, Robbie, Ross, and Mark Levy.
+INFO:root:Session ID: 692ef891-8e1a-4666-a61a-371bd0e2ef5f, User Query: was he a entrepreneur?
+
+, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 692ef891-8e1a-4666-a61a-371bd0e2ef5f, AI Response: Yes, Rich Schefren was an entrepreneur. He took over his father's ailing store, made significant changes to the inventory, and managed to improve the business.
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 692ef891-8e1a-4666-a61a-371bd0e2ef5f, User Query: can you list some of points about rich schefren?, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 692ef891-8e1a-4666-a61a-371bd0e2ef5f, AI Response: Yes, Rich Schefren is described as an entrepreneur. He took over his father's store and revamped the inventory and business model.
+INFO:root:Session ID: 692ef891-8e1a-4666-a61a-371bd0e2ef5f, User Query: mention his friends name, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 692ef891-8e1a-4666-a61a-371bd0e2ef5f, AI Response: The context does not provide explicit information about Rich Schefren being an entrepreneur.
+INFO:root:Session ID: 8408462c-45c3-450f-b388-6841391db9d0, User Query: who is rich schefren?, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 8408462c-45c3-450f-b388-6841391db9d0, AI Response: Rich Schefren is the son of Harvey Schefren. He took over his father's ailing store in 1994 while he was in college in Ohio. He transformed the store's inventory, replacing it with more trendy items, and implemented new business strategies such as selling vintage clothing by the pound. He is known for his unconventional methods and clashes with his father over the store's operations.
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:openai._base_client:Retrying request to /embeddings in 0.449204 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:openai._base_client:Retrying request to /embeddings in 0.396795 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 8f697136-6585-4f60-95fd-8c54d2755a2b, User Query: who is rich schefren?, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 8f697136-6585-4f60-95fd-8c54d2755a2b, AI Response: Rich Schefren is the son of Harvey Schefren. In 1994, he took over his father's ailing vintage clothing store while he was in college. He made significant changes to the store's inventory and marketing approach, which led to an increase in business. However, his methods often clashed with his father's traditional views.
+INFO:root:Session ID: 8f697136-6585-4f60-95fd-8c54d2755a2b, User Query: is he entrepreneur?, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 8f697136-6585-4f60-95fd-8c54d2755a2b, AI Response: Rich Schefren is an expert in the field of Demand Generation, which is a specific area of marketing. He is referred to as a guru in this field. The context suggests that he may be an entrepreneur, as he is mentioned in relation to running a business and generating demand for products.

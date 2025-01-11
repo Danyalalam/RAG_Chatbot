@@ -3,7 +3,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Azure OpenAI Configuration
+# OpenAI Configuration
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+# Azure OpenAI Configuration (if still needed for other models)
 AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
 AZURE_OPENAI_ENDPOINT = "https://langrag.openai.azure.com/"
 AZURE_API_VERSION = "2024-02-15-preview"

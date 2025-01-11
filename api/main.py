@@ -4,7 +4,6 @@ from pydantic_models import (
     QueryResponse,
     DocumentInfo,
     DeleteFileRequest,
-    EvaluationRecord,
     EvaluationResponse  # Imported new model
 )
 from langchain_utils import get_rag_chain
@@ -20,13 +19,11 @@ from db_utils import (
 from chroma_utils import index_document_to_chroma, delete_doc_from_chroma,vectorstore
 import os
 import uuid
-from evaluation_utils import ModelEvaluator
 import logging
 import time
 from typing import List
 logging.basicConfig(filename='app.log', level=logging.INFO)
 app = FastAPI()
-evaluator = ModelEvaluator()
 
 @app.post("/chat", response_model=QueryResponse)
 def chat(query_input: QueryInput):
@@ -46,21 +43,7 @@ def chat(query_input: QueryInput):
         "chat_history": chat_history
     })['answer']
     
-    response_time = time.time() - start_time  # Calculate response time
-    tokens_used = len(answer.split())  # Basic token count
-    
-    # Placeholder for retrieved_docs, replace with actual context retrieval if available
-    retrieved_docs = vectorstore.similarity_search(query_input.question, k=5)
-    context = [doc.page_content for doc in retrieved_docs]    
-    # Evaluate the response
-    eval_metrics = evaluator.evaluate_response(
-        model=query_input.model.value,
-        question=query_input.question,
-        answer=answer,
-        start_time=start_time,
-        tokens=tokens_used,
-        context=context
-    )
+
     
     # Insert logs with evaluation metrics
     insert_application_logs(session_id, query_input.question, answer, query_input.model.value)
@@ -71,7 +54,6 @@ def chat(query_input: QueryInput):
         answer=answer, 
         session_id=session_id, 
         model=query_input.model,
-        metrics=eval_metrics
     )
 
 from fastapi import UploadFile, File, HTTPException
@@ -124,29 +106,3 @@ def delete_document(request: DeleteFileRequest):
     else:
         return {"error": f"Failed to delete document with file_id {request.file_id} from Chroma."}
     
-
-# Evaluations Endpoint
-@app.get("/evaluations", response_model=List[EvaluationResponse])
-def get_evaluations():
-    evaluations = fetch_all_evaluations()  # Should return List[sqlite3.Row]
-    
-    response = []
-    for eval in evaluations:
-        metrics = {
-            'response_time': eval['response_time'] if 'response_time' in eval.keys() else 0.0,
-            'tokens_used': eval['tokens_used'] if 'tokens_used' in eval.keys() else 0,
-            'relevance_score': eval['relevance_score'] if 'relevance_score' in eval.keys() else 0.0,
-            'citation_accuracy': eval['citation_accuracy'] if 'citation_accuracy' in eval.keys() else 0.0
-        }
-        
-        eval_response = EvaluationResponse(
-            id=eval['id'],
-            model=eval['model'],
-            question=eval['question'],
-            answer=eval['answer'],
-            metrics=metrics,
-            timestamp=eval['timestamp']
-        )
-        response.append(eval_response)
-    
-    return response
