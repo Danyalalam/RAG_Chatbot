@@ -4,9 +4,9 @@ from api_utils import upload_document, list_documents, delete_document
 def display_sidebar():
     # Model Selection
     model_options = {
-        "GPT-4": "gpt-4",  # Display name : actual value
+        "GPT-4": "gpt-4",          # Display name : actual value
         "LLaMA 3.1": "llama-3.1",
-        "GEMINI": "gemini-pro"
+        "Claude": "claude"          # Added Claude and removed GEMINI
     }
     
     # Get display name from value if exists in session state

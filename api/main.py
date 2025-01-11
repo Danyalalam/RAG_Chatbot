@@ -17,6 +17,8 @@ from db_utils import (
     fetch_all_evaluations
 )
 from chroma_utils import index_document_to_chroma, delete_doc_from_chroma,vectorstore
+from fastapi.middleware.cors import CORSMiddleware
+
 import os
 import uuid
 import logging
@@ -24,6 +26,21 @@ import time
 from typing import List
 logging.basicConfig(filename='app.log', level=logging.INFO)
 app = FastAPI()
+
+# Define allowed origins
+origins = [
+    "http://localhost",            # For local testing
+    "http://localhost:8501",       # Streamlit default port
+    "https://your-streamlit-app-url.com"  # Replace with your deployed Streamlit URL if applicable
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],           
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post("/chat", response_model=QueryResponse)
 def chat(query_input: QueryInput):

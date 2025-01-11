@@ -21,4 +21,6 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_MODEL_NAME = "llama-3.1-70b-versatile"
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-GEMINI_MODEL = "gemini-1.5-pro"
+
+# Anthropic Configuration
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")

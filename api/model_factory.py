@@ -1,6 +1,6 @@
 from langchain_openai import ChatOpenAI
 from langchain_groq import ChatGroq
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_anthropic import ChatAnthropic  # Import Anthropic's ChatAnthropic
 from config import *
 import logging
 
@@ -22,14 +22,14 @@ class ModelFactory:
                     temperature=0.2,
                     max_tokens=None
                 )
-            elif model_name == "gemini-pro":
-                return ChatGoogleGenerativeAI(
-                    model="gemini-2.0-flash-exp",
+            elif model_name == "claude":
+                return ChatAnthropic(
+                    model="claude-3.5-sonnet-20240620",
                     temperature=0.2,
                     max_tokens=None,
                     timeout=None,
                     max_retries=2,
-                    google_api_key=GOOGLE_API_KEY
+                    anthropic_api_key=ANTHROPIC_API_KEY
                 )
             else:
                 raise ValueError(f"Unknown model: {model_name}")

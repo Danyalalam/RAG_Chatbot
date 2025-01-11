@@ -10,7 +10,7 @@ def get_api_response(question, session_id, model):
     
     try:
         response = requests.post(
-            "http://localhost:8000/chat", 
+            "https://rag-chatbot-leez.onrender.com/chat",  # Updated URL
             headers={'Content-Type': 'application/json'},
             json=data
         )
@@ -25,7 +25,10 @@ def upload_document(file):
     print("Uploading file...")
     try:
         files = {"file": (file.name, file, file.type)}
-        response = requests.post("http://localhost:8000/upload-doc", files=files)
+        response = requests.post(
+            "https://rag-chatbot-leez.onrender.com/upload-doc",  # Updated URL
+            files=files
+        )
         if response.status_code == 200:
             return response.json()
         else:
@@ -37,7 +40,7 @@ def upload_document(file):
 
 def list_documents():
     try:
-        response = requests.get("http://localhost:8000/list-docs")
+        response = requests.get("https://rag-chatbot-leez.onrender.com/list-docs")  # Updated URL
         if response.status_code == 200:
             return response.json()
         else:
@@ -55,7 +58,11 @@ def delete_document(file_id):
     data = {"file_id": file_id}
 
     try:
-        response = requests.post("http://localhost:8000/delete-doc", headers=headers, json=data)
+        response = requests.post(
+            "https://rag-chatbot-leez.onrender.com/delete-doc",  # Updated URL
+            headers=headers,
+            json=data
+        )
         if response.status_code == 200:
             return response.json()
         else:
