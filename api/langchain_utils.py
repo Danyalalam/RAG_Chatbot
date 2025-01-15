@@ -13,29 +13,45 @@ output_parser = StrOutputParser()
 
 
 
-
-# Set up prompts and chains
+# System prompt for contextualizing questions
 contextualize_q_system_prompt = (
-    "Given a chat history and the latest user question "
-    "which might reference context in the chat history, "
-    "formulate a standalone question which can be understood "
-    "without the chat history. Do NOT answer the question, "
-    "just reformulate it if needed and otherwise return it as is."
+    "Given a chat history and the latest user question, formulate a standalone question that will help retrieve relevant patterns, "
+    "recurring themes, and personal insights across multiple journal entries. The reformulated question should emphasize: "
+    "1. Long-term patterns and behavioral trends "
+    "2. Emotional and psychological themes "
+    "3. Decision-making patterns and their outcomes "
+    "4. Personal growth and development insights "
+    "Do NOT answer the question, only reformulate it if needed to maximize relevant context retrieval."
 )
 
+# Main QA prompt
 qa_prompt = ChatPromptTemplate.from_messages([
+    ("system", """You are analyzing personal journal entries to extract meaningful insights and patterns. 
+    When analyzing the provided context:
+    1. Focus on patterns and themes that are explicitly evidenced in the entries
+    2. Connect related insights across different time periods
+    3. Identify recurring behaviors, thoughts, and emotional patterns
+    4. Note significant changes or transformations over time
+    
+    If certain aspects aren't directly supported by the context, focus on what is available in the provided entries."""),
     HumanMessagePromptTemplate.from_template(
-        "Use the following context to answer the user's question.\nContext: {context}\n\nQuestion: {input}"
+        """Based on these journal entries and their context:
+        {context}
+        
+        Provide an analysis addressing: {input}
+        
+        Focus on insights and patterns that are specifically supported by the provided entries."""
     ),
     MessagesPlaceholder(variable_name="chat_history")
 ])
 
+# Question contextualization prompt
 contextualize_q_prompt = ChatPromptTemplate.from_messages([
+    ("system", contextualize_q_system_prompt),
     HumanMessagePromptTemplate.from_template(
-        "Given a chat history and the latest user question, formulate a standalone question.\n"
-        "Chat history: {chat_history}\n"
-        "User question: {input}\n"
-        "Standalone question:"
+        "Previous chat context: {chat_history}\n"
+        "Current analysis request: {input}\n"
+        "Reformulated question for context retrieval:"
     )
 ])
 
