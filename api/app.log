@@ -642,3 +642,301 @@ INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1
 INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 INFO:root:Session ID: 8f697136-6585-4f60-95fd-8c54d2755a2b, AI Response: Rich Schefren is an expert in the field of Demand Generation, which is a specific area of marketing. He is referred to as a guru in this field. The context suggests that he may be an entrepreneur, as he is mentioned in relation to running a business and generating demand for products.
+INFO:backoff:Backing off send_request(...) for 0.3s (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001718D358500>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+INFO:backoff:Backing off send_request(...) for 0.4s (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001718D294DD0>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+INFO:backoff:Backing off send_request(...) for 1.9s (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001718D358740>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+ERROR:backoff:Giving up send_request(...) after 4 tries (requests.exceptions.ConnectionError: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001718D359100>: Failed to resolve 'us.i.posthog.com' ([Errno 11001] getaddrinfo failed)")))
+INFO:root:Session ID: ddcfcd49-28f4-4077-9b0b-72f126017c98, User Query: But the output is much more condensed than when I got to ChatGPT directly and upload the journals into ChatGPT and use the prompt, Model: llama-3.1
+INFO:openai._base_client:Retrying request to /embeddings in 0.385490 seconds
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: ddcfcd49-28f4-4077-9b0b-72f126017c98, AI Response: It seems like you're reflecting on your productivity and output processes. You've been spending a lot of time on input and processing, such as reading, taking notes in Evernote, and preparing presentations, but you feel that your output is not sufficient. You're looking to formalize two processes: prepared presentations and livestream thinking, to boost your output.
+
+You've identified several potential output components, including livestreams, reports, daily or weekly emails, blog posts, and social media posts. However, you're struggling to clarify your outputs and create a template to follow for each one.
+
+It appears that you're experimenting with different approaches, such as using Evernote to organize your thoughts and working through problems in front of an audience, similar to Jordan Peterson's approach. You're also considering using ChatGPT to help with your output, but you've noticed that the output is more condensed when you use it directly compared to uploading your journals and using prompts.
+
+To answer your question, it seems that you're wondering why the output is more condensed when you use ChatGPT directly compared to uploading your journals and using prompts. This could be due to the fact that ChatGPT is designed to provide concise and direct answers to specific questions or prompts, whereas uploading your journals and using prompts may allow for more free-form and expansive responses. However, without more context, it's difficult to provide a more specific answer.
+INFO:root:Session ID: 6a864ead-3501-44d2-8887-55921259c173, User Query: i am interested to know what challenges , recurring problems, unspoken issues, long term cyclical patterns, as well useful additional insights that me knowing would be helpful - strive for accuracy, insightfullness, candor, and comprehensiveness over being nice, tactful, or protecting my feelings, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 6a864ead-3501-44d2-8887-55921259c173, AI Response: The context suggests several challenges and recurring problems. These include a struggle with mental health, a desire for deep emotional connections, a tendency to seek external solutions for internal issues, and a habit of breaking personal promises or rules. There's also a mention of thrill-seeking from inappropriate places, a Messiah complex, overanalyzing emotions, transferring emotions from the source to straw men, and holding on to false hope. 
+
+The person also seems to struggle with defining clear roles and responsibilities, which could be a long-term cyclical pattern. They also mention a lack of direction and perceptions about the business being in need of more direction, which could be an unspoken issue. 
+
+Additional insights that might be helpful include the person's desire to ensure that others feel valued and important, their plan to discuss their issues with Dr. Fireman, and their intention to use a Current Reality Tree (CRT) to better understand their issues. 
+
+The person also seems to be working on a new program and is excited about new possibilities at Strategic Profits due to the arrival of Ryjio and Paul. This could be a useful insight into their current state of mind and future plans.
+INFO:root:Session ID: c8c7591d-32b7-4632-990d-ca1e3427187f, User Query: i am interested to know what challenges , recurring problems, unspoken issues, long term cyclical patterns, as well useful additional insights that me knowing would be helpful - strive for accuracy, insightfullness, candor, and comprehensiveness over being nice, tactful, or protecting my feelings, Model: claude
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:anthropic._base_client:Retrying request to /v1/messages in 0.382212 seconds
+INFO:anthropic._base_client:Retrying request to /v1/messages in 0.975889 seconds
+INFO:root:Session ID: c5803cd3-7990-4392-b0f0-555dcf157f62, User Query: i am interested to know what challenges , recurring problems, unspoken issues, long term cyclical patterns, as well useful additional insights that me knowing would be helpful - strive for accuracy, insightfullness, candor, and comprehensiveness over being nice, tactful, or protecting my feelings, Model: claude
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:anthropic._base_client:Retrying request to /v1/messages in 0.434857 seconds
+INFO:anthropic._base_client:Retrying request to /v1/messages in 0.782965 seconds
+INFO:httpx:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:root:Session ID: c5803cd3-7990-4392-b0f0-555dcf157f62, AI Response: Based on the context provided, here are some key challenges, recurring problems, unspoken issues, and long-term cyclical patterns I've identified, along with additional insights:
+
+1. Emotional dependency and enmeshment: There's a strong desire to be fully enmeshed with another person and to be the most important person in their life. This suggests potential issues with codependency and difficulty maintaining healthy boundaries.
+
+2. Difficulty with emotional connection: The author mentions only connecting intellectually but craving emotional connection. This suggests a pattern of struggling to form deep emotional bonds.
+
+3. External solutions for internal problems: There's a tendency to try to solve internal issues with external solutions, which may lead to temporary fixes rather than addressing root causes.
+
+4. Self-sabotage: Consistent breaking of promises/rules to oneself indicates a pattern of self-sabotage that may be undermining personal growth and goals.
+
+5. Thrill-seeking from inappropriate sources: This could indicate risk-taking behavior or a pattern of seeking validation or excitement in unhealthy ways.
+
+6. Messiah complex: This suggests a tendency to take on too much responsibility for others or to see oneself as a savior figure, which can lead to burnout and unrealistic expectations.
+
+7. Overanalyzing emotions: This may lead to difficulty in experiencing emotions authentically and could be a form of avoidance or control.
+
+8. Emotional transference: Transferring emotions from their source to "straw men" suggests difficulty in addressing the real causes of emotional distress.
+
+9. Holding onto false hope: This pattern may prevent the author from moving on from unproductive situations or relationships.
+
+10. Lack of clear direction in business: The author mentions needing more direction and alignment in their business, suggesting organizational challenges.
+
+11. Struggle with decision-making: The mention of "decisions over avoidance" implies a pattern of avoiding difficult choices.
+
+12. Difficulty prioritizing feelings: The note "feelings first, thoughts second" suggests a tendency to intellectualize rather than process emotions.
+
+13. Concerns about authenticity in relationships: The question "What I want from others, is it real/safe?" indicates trust issues and fear of vulnerability.
+
+14. Parenting concerns: There's a focus on connecting with "the girls" and ensuring they feel they matter, which may stem from the author's own childhood experiences.
+
+These patterns suggest underlying issues with self-esteem, emotional regulation, and forming healthy relationships. The author seems to be working on self-awareness and personal growth, but may benefit from continued therapy to address these deep-seated patterns and develop healthier coping mechanisms.
+INFO:root:Session ID: a7dd5714-4626-442c-bdee-52af2fecae35, User Query: i am interested to know what challenges , recurring problems, unspoken issues, long term cyclical patterns, as well useful additional insights that me knowing would be helpful - strive for accuracy, insightfullness, candor, and comprehensiveness over being nice, tactful, or protecting my feelings, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: a7dd5714-4626-442c-bdee-52af2fecae35, AI Response: Based on the context provided, here are some challenges, recurring problems, unspoken issues, long-term cyclical patterns, and additional insights that may be helpful:
+
+**Challenges:**
+
+1. **Emotional connection vs. intellectual connection**: You struggle to form deep emotional connections with others, often relying on intellectual connections instead.
+2. **Self-awareness and introspection**: You recognize the need to dig deeper into your thoughts, feelings, and behaviors to understand yourself better.
+3. **Boundary setting and prioritization**: You tend to overcommit and prioritize others' needs over your own, leading to feelings of burnout and resentment.
+4. **Trust and intimacy issues**: Your past experiences have led to trust issues, making it challenging for you to form and maintain healthy, intimate relationships.
+
+**Recurring problems:**
+
+1. **People-pleasing**: You often prioritize others' needs and feelings over your own, leading to feelings of resentment and burnout.
+2. **Overanalyzing emotions**: You tend to overthink and analyze your emotions, which can lead to feelings of anxiety and uncertainty.
+3. **Thrill-seeking behaviors**: You may engage in thrill-seeking behaviors as a way to cope with stress, boredom, or emotional pain.
+4. **Broken promises and self-sabotage**: You consistently break promises to yourself and engage in self-sabotaging behaviors, which can undermine your self-trust and confidence.
+
+**Unspoken issues:**
+
+1. **Fear of abandonment**: Your need to be "fully enmeshed" with someone may stem from a deep-seated fear of abandonment or rejection.
+2. **Low self-worth**: Your tendency to prioritize others' needs over your own may indicate a lack of self-worth or self-value.
+3. **Unresolved trauma**: Your past experiences, such as the situation with Debit and Illume, may have left unresolved emotional trauma that still affects your relationships and behaviors.
+
+**Long-term cyclical patterns:**
+
+1. **Attraction to unavailable or toxic partners**: You may be drawn to partners who are unavailable or toxic, which can perpetuate a cycle of emotional pain and trauma.
+2. **Self-sabotaging behaviors**: Your consistent breaking of promises to yourself and engagement in self-sabotaging behaviors may be a long-term pattern that undermines your personal growth and relationships.
+3. **Emotional numbing**: You may use intellectualization or thrill-seeking behaviors as a way to numb or avoid dealing with difficult emotions, which can perpetuate a cycle of emotional disconnection.
+
+**Additional insights:**
+
+1. **Need for clear roles and responsibilities**: Establishing clear roles and responsibilities in your personal and professional life can help you feel more grounded and directed.
+2. **Importance of self-care and self-compassion**: Prioritizing self-care and self-compassion can help you develop a more positive and compassionate relationship with yourself.
+3. **Value of vulnerability and openness**: Practicing vulnerability and openness in your relationships can help you build deeper, more meaningful connections with others.
+
+These insights are meant to be helpful and thought-provoking, rather than judgmental or critical. Remember that personal growth and self-awareness are ongoing processes, and it's okay to take things one step at a time.
+INFO:root:Session ID: 45edd2fb-c472-46e9-988d-16f80f6193af, User Query: i am interested to know what challenges , recurring problems, unspoken issues, long term cyclical patterns, as well useful additional insights that me knowing would be helpful - strive for accuracy, insightfullness, candor, and comprehensiveness over being nice, tactful, or protecting my feelings, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 45edd2fb-c472-46e9-988d-16f80f6193af, AI Response: The context provided does not give specific information on challenges, recurring problems, unspoken issues, long term cyclical patterns, or additional insights. However, it does mention the author's mental health, their relationship with Fineman, their desire to connect more with the girls, and their need for clear roles and responsibilities in their business. They also mention their concern about overlooking current holes in their knowledge and the need for their business to thrive. They also list a series of self-monitoring questions to track their behaviors and progress.
+INFO:root:Session ID: 45edd2fb-c472-46e9-988d-16f80f6193af, User Query: i am interested to know what challenges , recurring problems, unspoken issues, long term cyclical patterns, as well useful additional insights that me knowing would be helpful - strive for accuracy, insightfullness, candor, and comprehensiveness over being nice, tactful, or protecting my feelings, Model: claude
+INFO:httpx:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:root:Session ID: 45edd2fb-c472-46e9-988d-16f80f6193af, AI Response: 
+
+Based on this context, some potential challenges or issues that may be worth exploring further include:
+
+1. Work-life balance and prioritization of family relationships
+2. Mental health management, particularly related to attention and focus
+3. Business growth and strategy, especially during times of change or pullback
+4. Knowledge gaps and continuous learning
+5. Self-awareness and personal growth
+6. Time management and focus on high-leverage activities
+7. Alignment of personal values with business practices
+8. Long-term goal setting and planning
+9. Team dynamics and leadership development
+
+To gain more accurate and comprehensive insights, it would be beneficial to have more specific information about the person's current situation, relationships, and business context. The author's suggestion of asking questions like "What am I pretending not to notice?" or "Where am I lying to myself?" could be particularly useful in uncovering unspoken issues or long-term patterns.
+INFO:root:Session ID: 45edd2fb-c472-46e9-988d-16f80f6193af, User Query: i am interested to know what challenges , recurring problems, unspoken issues, long term cyclical patterns, as well useful additional insights that me knowing would be helpful - strive for accuracy, insightfullness, candor, and comprehensiveness over being nice, tactful, or protecting my feelings, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 45edd2fb-c472-46e9-988d-16f80f6193af, AI Response: 
+INFO:root:Session ID: 45edd2fb-c472-46e9-988d-16f80f6193af, User Query: i am interested to know what challenges , recurring problems, unspoken issues, long term cyclical patterns, as well useful additional insights that me knowing would be helpful - strive for accuracy, insightfullness, candor, and comprehensiveness over being nice, tactful, or protecting my feelings, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 45edd2fb-c472-46e9-988d-16f80f6193af, AI Response: Based on the context provided, here are some potential challenges, recurring problems, unspoken issues, long-term cyclical patterns, and additional insights that may be helpful:
+
+**Challenges:**
+
+1. **Lack of clarity on future direction**: The author mentions "no clarity on future direction" as an obstacle, which may be causing uncertainty and stagnation.
+2. **Difficulty in prioritizing and focusing on high-leverage activities**: The author struggles with prioritizing tasks and managing their time effectively, leading to feelings of overwhelm and inefficiency.
+3. **Self-doubt and uncertainty about personal values and goals**: The author questions their own values, beliefs, and goals, which may be causing confusion and indecision.
+4. **Struggling to maintain a healthy work-life balance**: The author mentions the importance of family and relationships, but may be struggling to balance these with work demands.
+
+**Recurring Problems:**
+
+1. **Procrastination and lack of motivation**: The author mentions "bad habits" and struggles with staying focused and motivated.
+2. **Difficulty in making decisions**: The author mentions "decisions over avoidance" as a topic of discussion with Fineman, suggesting that decision-making may be a recurring challenge.
+3. **Feeling stuck or stagnant**: The author mentions feeling like they're not making progress or moving forward, which may be a recurring pattern.
+
+**Unspoken Issues:**
+
+1. **Fear of failure or success**: The author may be hesitant to take risks or pursue new opportunities due to fear of failure or success.
+2. **Unresolved emotional issues**: The author mentions "deeper issues" and "feelings first, thoughts second" as topics of discussion with Fineman, suggesting that there may be unresolved emotional issues that need to be addressed.
+3. **Lack of self-awareness**: The author may not be fully aware of their own strengths, weaknesses, values, and goals, which can lead to confusion and uncertainty.
+
+**Long-term Cyclical Patterns:**
+
+1. **Patterns of self-sabotage**: The author may be engaging in self-sabotaging behaviors, such as procrastination or self-doubt, that hold them back from achieving their goals.
+2. **Cycles of motivation and burnout**: The author may experience cycles of high motivation and energy, followed by burnout and exhaustion, which can be detrimental to their overall well-being and productivity.
+3. **Patterns of people-pleasing**: The author may be prioritizing others' needs and expectations over their own, leading to feelings of resentment and burnout.
+
+**Additional Insights:**
+
+1. **The importance of self-reflection and self-awareness**: The author's journey suggests that self-reflection and self-awareness are crucial for personal growth and development.
+2. **The need for clear goals and priorities**: The author's struggles with prioritization and focus suggest that clear goals and priorities are essential for achieving success and fulfillment.
+3. **The value of seeking support and guidance**: The author's discussions with Fineman and Jay suggest that seeking support and guidance from others can be helpful in navigating challenges and achieving personal growth.
+INFO:root:Session ID: 7958099c-0545-47d0-a9b3-8a3c6d38c740, User Query: i am interested to know what challenges , recurring problems, unspoken issues, long term cyclical patterns, as well useful additional insights that me knowing would be helpful - strive for accuracy, insightfullness, candor, and comprehensiveness over being nice, tactful, or protecting my feelings, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 7958099c-0545-47d0-a9b3-8a3c6d38c740, AI Response: The challenges and recurring problems mentioned in the context include:
+
+1. Struggling with mental health and emotional issues.
+2. Difficulty in connecting emotionally with others, despite being able to connect intellectually.
+3. Attempting to solve internal issues with external solutions.
+4. Consistently breaking promises or rules set for oneself.
+5. Seeking thrill from wrong or inappropriate places.
+6. Having a Messiah complex, or the need to save or fix others.
+7. Overanalyzing emotions.
+8. Transferring emotions from the source to straw men, or misdirecting emotions onto irrelevant issues or people.
+9. Holding on to false hope.
+
+Unspoken issues and long-term cyclical patterns include:
+
+1. The need to be fully enmeshed with another person, to be the most important person to them and vice versa.
+2. The pursuit of a certain emotional problem, specifically with a person named Kerolin.
+3. The desire for a deeper understanding of one's own emotions and motivations.
+
+Additional insights that might be helpful include:
+
+1. The person is aware of their issues and is actively seeking help, including therapy with Dr. Fireman.
+2. They are making an effort to connect more deeply with the girls in their life and to ensure they feel valued and important.
+3. They are planning to use a Current Reality Tree (CRT) to better understand their issues.
+4. They are also considering their desired outcomes from meetings and how to achieve them, indicating a proactive approach to problem-solving. 
+
+The person also seems to be involved in a business and is considering the need for clear roles and responsibilities within the team. They are aware of the need for direction and alignment in actions to maximize progress and profits.
+INFO:root:Session ID: 80ecbdec-e219-4a95-8922-eb1360f0458b, User Query: i am interested to know what challenges , recurring problems, unspoken issues, long term cyclical patterns, as well useful additional insights that me knowing would be helpful - strive for accuracy, insightfullness, candor, and comprehensiveness over being nice, tactful, or protecting my feelings, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 80ecbdec-e219-4a95-8922-eb1360f0458b, AI Response: The user seems to be asking for a comprehensive and candid analysis of their recurring problems, challenges, unspoken issues, and long-term cyclical patterns. From the context, some of these issues include:
+
+1. Difficulty in forming emotional connections, despite being able to connect intellectually.
+2. Attempting to solve internal issues with external solutions.
+3. Consistently breaking promises or rules to themselves.
+4. Seeking thrill from inappropriate places.
+5. Overanalyzing emotions and transferring emotions from the source to straw men.
+6. Holding on to false hope.
+7. The need to be fully enmeshed with another person and to be most important to them.
+8. Uncertainty about what they want from others and whether it's real or safe.
+
+The user also seems to be struggling with a lack of direction in their business and is concerned about the need for more clarity in roles and responsibilities. They are also grappling with the challenge of capturing attention effectively for persuasion. They are keen on aligning everyone's actions and making maximum progress towards their objectives.
+INFO:root:Session ID: 80ecbdec-e219-4a95-8922-eb1360f0458b, User Query: i am interested to know what challenges , recurring problems, unspoken issues, long term cyclical patterns, as well useful additional insights that me knowing would be helpful - strive for accuracy, insightfullness, candor, and comprehensiveness over being nice, tactful, or protecting my feelings, Model: claude
+INFO:httpx:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:root:Session ID: 80ecbdec-e219-4a95-8922-eb1360f0458b, AI Response: 
+
+Additionally, the user appears to be dealing with:
+
+1. Procrastination and task avoidance
+2. Indecisiveness
+3. Lack of routine and urgency in work
+4. Difficulty in prioritizing important tasks
+5. Perfectionism
+6. Inability to delegate effectively
+7. Time management issues
+8. Work-life balance problems
+9. Escapism through substance use
+
+The user seems to be aware of these issues and is actively seeking ways to address them, which is a positive sign. They recognize the need for more discipline, assertiveness, and intentionality in their life and work.
+INFO:root:Session ID: 6424fcc6-0399-444a-af21-0a27fc86cdf4, User Query: i am interested to know what challenges , recurring problems, unspoken issues, long term cyclical patterns, as well useful additional insights that me knowing would be helpful - strive for accuracy, insightfullness, candor, and comprehensiveness over being nice, tactful, or protecting my feelings, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 6424fcc6-0399-444a-af21-0a27fc86cdf4, AI Response: The context provided discusses several challenges and issues. These include:
+
+1. Struggling with mental health and trying to understand personal feelings and thoughts.
+2. Issues with Fineman, such as the need to be fully enmeshed with another person, and questioning whether what the speaker wants from others is real or safe.
+3. A list of issues to discuss with Dr. Fireman, including only connecting intellectually but craving emotional connection, trying to solve internal issues with external solutions, and holding on to false hope.
+4. The speaker's concern about not taking the time to understand how different concepts connect with each other, which could lead to gaps in knowledge and hinder business growth.
+5. The need for clear roles and responsibilities in the business to ensure everyone's actions are aligned and maximum progress is made towards business objectives.
+
+Additional insights include the speaker's desire to make sure the girls in their life know they matter and their feelings are important, and the speaker's plan to use a Current Reality Tree (CRT) to understand their issues better. The speaker also mentions the importance of knowing the desired outcome from meetings and how to achieve it.
+INFO:root:Session ID: 7bbffdf6-1dc1-409c-b854-696591b96886, User Query: i am interested to know what challenges , recurring problems, unspoken issues, long term cyclical patterns, as well useful additional insights that me knowing would be helpful - strive for accuracy, insightfullness, candor, and comprehensiveness over being nice, tactful, or protecting my feelings, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 7bbffdf6-1dc1-409c-b854-696591b96886, AI Response: The user seems to be asking for an honest assessment of the challenges, recurring problems, unspoken issues, and long-term cyclical patterns that the speaker is dealing with. They are also interested in any additional insights that could be helpful for them to understand the speaker's situation better. The speaker has mentioned several challenges and issues they are dealing with:
+
+1. Struggling with emotional connection: The speaker mentions that they often connect intellectually but crave emotional connection. This could be a recurring issue in their relationships.
+
+2. Trying to solve internal issues with external solutions: This could be a pattern where the speaker is looking for external validation or solutions to deal with internal emotional or psychological issues.
+
+3. Consistent breaking of promises/rules to themselves: This could indicate a lack of self-discipline or self-trust.
+
+4. Thrill-seeking from wrong/inappropriate places: This could be a sign of risk-taking behavior or seeking excitement in potentially harmful ways.
+
+5. Messiah complex: This could indicate a tendency to try and 'save' others or take on their problems.
+
+6. Overanalyzing of emotion: This could be a sign of anxiety or overthinking.
+
+7. Transfer of emotion from source to straw men: This could indicate a tendency to misdirect emotions towards unrelated issues or people.
+
+8. Holding on to false hope: This could be a sign of denial or unrealistic expectations.
+
+The speaker also mentions a desire to focus on their mental health and to improve their relationships, particularly with 'the girls' who they want to ensure feel valued and important. They also express a desire to work on their business and to ensure it thrives. They have a meeting with Dr. Fireman where they plan to discuss these issues further. They also want to ensure that they have clear roles and responsibilities within their business.
+INFO:root:Session ID: 2762bfb9-e013-4678-a3d4-dbfee58ec0fc, User Query: i am interested to know what challenges , recurring problems, unspoken issues, long term cyclical patterns, as well useful additional insights that me knowing would be helpful - strive for accuracy, insightfullness, candor, and comprehensiveness over being nice, tactful, or protecting my feelings, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 8a231c50-bbed-46f1-aa0a-6ab01016e90c, User Query: i am interested to know what challenges , recurring problems, unspoken issues, long term cyclical patterns, as well useful additional insights that me knowing would be helpful - strive for accuracy, insightfullness, candor, and comprehensiveness over being nice, tactful, or protecting my feelings, Model: gpt-4
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 85bc3219-4292-44e8-bd3d-e70d385b7b55, User Query: i am interested to know what challenges , recurring problems, unspoken issues, long term cyclical patterns, as well useful additional insights that me knowing would be helpful - strive for accuracy, insightfullness, candor, and comprehensiveness over being nice, tactful, or protecting my feelings, Model: claude
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:root:Session ID: 85bc3219-4292-44e8-bd3d-e70d385b7b55, AI Response: Based on the context provided, here are some key challenges, recurring problems, and patterns that emerge:
+
+1. Emotional dependency and enmeshment: There's a strong need to be fully enmeshed with another person and to be the most important to them. This seems to be a long-term pattern that affects relationships.
+
+2. Difficulty with emotional connection: The journal mentions only connecting intellectually but craving emotional connection. This appears to be a recurring issue.
+
+3. External solutions for internal problems: There's a tendency to try to solve internal issues with external solutions, which likely leads to temporary fixes rather than addressing root causes.
+
+4. Breaking promises to self: Consistent breaking of promises/rules to oneself is mentioned, indicating issues with self-discipline or follow-through.
+
+5. Inappropriate thrill-seeking: Seeking thrills from wrong or inappropriate places is noted, which could lead to risky behaviors or decisions.
+
+6. Messiah complex: This suggests a pattern of feeling overly responsible for others or believing one can "save" people.
+
+7. Overanalyzing emotions: This could lead to paralysis by analysis or difficulty in acting on feelings.
+
+8. Emotional transference: Transferring emotions from their source to "straw men" indicates a pattern of misplacing or misdirecting feelings.
+
+9. Holding onto false hope: This could prevent moving on from unproductive situations or relationships.
+
+10. Struggle with prioritization and focus: There's an emphasis on needing to focus on what matters and spending time on high-leverage activities, suggesting this is an ongoing challenge.
+
+11. Need for clearer roles and responsibilities: This is mentioned in the context of business, indicating organizational issues.
+
+12. Desire for better self-monitoring: The interest in developing self-monitoring questions suggests a need for better self-awareness and tracking of behaviors and trends.
+
+These insights reveal a person who is self-aware and actively working on personal growth, but who struggles with deep-seated emotional patterns and organizational challenges both personally and professionally. The focus on emotional intelligence, self-reflection, and desire for improvement is evident throughout the journal entries.

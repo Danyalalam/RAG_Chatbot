@@ -18,7 +18,7 @@ class ModelFactory:
             elif model_name == "llama-3.1":
                 return ChatGroq(
                     api_key=GROQ_API_KEY,
-                    model_name="llama-3.1-70b-versatile",
+                    model_name="llama-3.3-70b-versatile",
                     temperature=0.2,
                     max_tokens=None
                 )
