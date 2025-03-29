@@ -4,7 +4,7 @@ import time
 
 # Define backend URL for local testing
 # Use localhost:8000 which is the default FastAPI port
-BACKEND_URL = "http://localhost:8000"
+BACKEND_URL = "https://rag-chatbot-pk0t.onrender.com"
 MAX_RETRIES = 2
 RETRY_DELAY = 1  # seconds
 
