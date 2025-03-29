@@ -964,3 +964,59 @@ INFO:root:Session ID: 73c75480-ca54-4eee-af24-43b33c1e847b, AI Response: Based o
 9. Unresolved Internal Conflicts: The entries do not provide clear evidence of unresolved internal conflicts. However, Rich's constant self-questioning and introspection may suggest some degree of internal conflict or uncertainty.
 
 10. Future Entrepreneurial Trajectory: Based on his past patterns of goal-setting, planning, and action, it is likely that Rich will continue to pursue ambitious goals and seek new ways to improve himself and his business. His focus on legacy-building suggests that he may also seek to expand his impact and influence in the future.
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 401 PermissionDenied"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 401 PermissionDenied"
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:root:Session ID: 1a1d1e69-f5b6-4f44-9752-a57cd549a282, User Query: Who is Representative Michael Rulli and what is his background?, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 1a1d1e69-f5b6-4f44-9752-a57cd549a282, AI Response: Based on the provided congressional records, Representative Michael Rulli is a Republican from Ohio, serving in the House of Representatives for the 6th congressional district since 2023. His background includes:
+
+1. **Education**: Rulli graduated from Poland Seminary High School in Ohio and Emerson College in Boston, Massachusetts, in 1991.
+2. **Professional experience**: Before entering politics, Rulli worked as a business executive.
+3. **Local and state politics**: He served on the Leetonia Exempted Village School District board of education from 2009 to 2017 and was a member of the Ohio state senate from 2019 to 2024.
+4. **Federal politics**: Rulli was elected to the U.S. House of Representatives in a special election in 2024 to fill the vacancy caused by the resignation of Representative Bill Johnson.
+
+Analyzing his voting records, we can observe the following patterns and insights:
+
+1. **Party loyalty**: Rulli's voting record shows a strong alignment with the Republican Party, as indicated by his "Yea" votes on several party-line bills, such as HR1048, HR115, and HRES1616.
+2. **Support for national security and law enforcement**: Rulli voted in favor of bills related to national security, border control, and law enforcement, including HR993, HR901, and HR495.
+3. **Backing for conservative amendments**: He supported amendments proposed by conservative representatives, such as the Biggs of Arizona Part C Amendment No. 4 and the Greene of Georgia Part C Amendment No. 18.
+4. **Opposition to liberal amendments**: Rulli voted against amendments proposed by liberal representatives, such as the Tlaib of Michigan Amendment No. 6.
+5. **Bipartisan support for non-controversial bills**: Rulli voted in favor of bills with broad bipartisan support, such as the Office of National Drug Control Policy Reauthorization Act (HR9598) and the Federal Agency Performance Act (S709).
+
+Overall, Representative Rulli's background and voting record suggest that he is a conservative Republican who supports national security, law enforcement, and limited government intervention. His votes align with the party's platform, and he has shown a willingness to support bipartisan efforts on non-controversial issues.
+INFO:root:Session ID: e91e80a0-4eaf-4185-9253-34ba9e9635a2, User Query: What is Representative Rulli's voting record on energy conservation bills?, Model: gpt-4
+ERROR:root:Error initializing model gpt-4: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+INFO:root:Session ID: dfe51601-1621-4507-90d5-1206fa53c09e, User Query: What is Representative Rulli's voting record on energy conservation bills?, Model: gpt-4
+ERROR:root:Error initializing model gpt-4: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+INFO:root:Session ID: 6f52a922-74ff-4f22-a522-46d51abeafdf, User Query: What is Representative Rulli's voting record on energy conservation bills?, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 6f52a922-74ff-4f22-a522-46d51abeafdf, AI Response: Based on the provided voting records, Representative Rulli's voting pattern on energy conservation bills suggests a consistent opposition to stricter energy conservation standards. 
+
+1. **HJRES24**: Representative Rulli voted in favor of a joint resolution providing for congressional disapproval of the Department of Energy's rule on energy conservation standards for walk-in coolers and walk-in freezers. This vote indicates opposition to stricter energy conservation standards.
+2. **HJRES75**: Similarly, Representative Rulli voted in favor of a joint resolution providing for congressional disapproval of the Department of Energy's rule on energy conservation standards for commercial refrigerators, freezers, and refrigerator-freezers. This vote further supports the pattern of opposition to stricter energy conservation standards.
+3. **HJRES42**: Representative Rulli also voted in favor of a joint resolution providing for congressional disapproval of the Department of Energy's rule on energy conservation program for appliance standards. This vote is consistent with the pattern of opposing stricter energy conservation standards.
+
+In contrast, Representative Rulli voted in favor of **HR1326**, the DOE and USDA Interagency Research Act, which suggests some level of support for energy-related research and development. However, this vote does not necessarily indicate support for stricter energy conservation standards.
+
+Overall, Representative Rulli's voting record on energy conservation bills suggests a consistent pattern of opposition to stricter energy conservation standards, as evidenced by the votes on HJRES24, HJRES75, and HJRES42. This pattern is consistent with the Republican party's general stance on energy policy, which often emphasizes deregulation and opposition to stricter environmental standards.
+
+It is essential to note that these insights are based solely on the provided voting records and may not reflect the representative's entire stance on energy conservation. Additional context and information may be necessary to gain a more comprehensive understanding of Representative Rulli's position on this issue.
+INFO:root:Session ID: 2c62ffc3-2b55-4c79-bdd1-94ecf03a95d5, User Query: How does Representative Rulli's voting record compare to other Ohio Republicans?, Model: llama-3.1
+INFO:httpx:HTTP Request: POST https://langrag.openai.azure.com//openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 2c62ffc3-2b55-4c79-bdd1-94ecf03a95d5, AI Response: Based on the provided voting records, Representative Rulli's voting pattern appears to be largely consistent with the Republican party line. To compare his voting record to other Ohio Republicans, we can analyze the votes where the party affiliation is indicated.
+
+In the selected votes, Representative Rulli voted in line with the Republican party (indicated by "Yea" or "Nay" matching the party affiliation) in the majority of cases. For example, on HR1048, the DETERRENT Act, he voted "Yea" on passage, which aligns with the Republican party's position (>99% of Republicans voted in favor). Similarly, on HR8771, he voted "Yea" on several amendments, including those proposed by Tenney of New York, Ogles of Tennessee, and Moskowitz of Florida, which also align with the Republican party's position.
+
+However, there are instances where Representative Rulli's vote deviates from the party line. For example, on HR8771, he voted "Nay" on the Greene of Georgia Part B Amendment No. 19, which had a 24% Republican support rate. He also voted "Nay" on the Gosar of Arizona Part B Amendment No. 15, which had a 28% Republican support rate.
+
+To compare Representative Rulli's voting record to other Ohio Republicans, we would need more information on the voting patterns of other Ohio Republican representatives. However, based on the provided data, it appears that Representative Rulli generally aligns with the Republican party's position on key votes.
+
+One notable pattern in Representative Rulli's voting record is his tendency to support amendments proposed by Republican representatives from other states. For example, he voted "Yea" on amendments proposed by Tenney of New York, Ogles of Tennessee, and Moskowitz of Florida. This suggests that he may be part of a broader Republican coalition that transcends state lines.
+
+In terms of legislative priorities, Representative Rulli's voting record suggests that he is focused on issues related to national security, law enforcement, and border control. For example, he voted "Yea" on the DETERRENT Act, which aims to prevent the use of certain unmanned aircraft systems, and he supported amendments related to border security and law enforcement.
+
+Overall, while Representative Rulli's voting record is largely consistent with the Republican party line, there are instances where he deviates from the party line. Further analysis of his voting record and comparison to other Ohio Republicans would require more data and information on their voting patterns.

@@ -4,7 +4,6 @@ from pydantic_models import (
     QueryResponse,
     DocumentInfo,
     DeleteFileRequest,
-    EvaluationResponse  # Imported new model
 )
 from langchain_utils import get_rag_chain
 import os

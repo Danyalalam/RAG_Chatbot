@@ -1,46 +1,46 @@
 from langchain_openai import ChatOpenAI
 from langchain_core.output_parsers import StrOutputParser
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder,HumanMessagePromptTemplate
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder, HumanMessagePromptTemplate
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from typing import List
 from langchain_core.documents import Document
 import os
 from chroma_utils import vectorstore
-retriever = vectorstore.as_retriever(search_kwargs={"k": 8})
+retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
 
 output_parser = StrOutputParser()
 
-
-
-# System prompt for contextualizing questions
+# System prompt for contextualizing questions about congressional data
 contextualize_q_system_prompt = (
-    "Given a chat history and the latest user question, formulate a standalone question that will help retrieve relevant patterns, "
-    "recurring themes, and personal insights across multiple journal entries. The reformulated question should emphasize: "
-    "1. Long-term patterns and behavioral trends "
-    "2. Emotional and psychological themes "
-    "3. Decision-making patterns and their outcomes "
-    "4. Personal growth and development insights "
-    "Do NOT answer the question, only reformulate it if needed to maximize relevant context retrieval."
+    "Given a chat history and the latest user question about congressional data, formulate a standalone question "
+    "that will help retrieve relevant information about voting records, legislative patterns, and congressional behavior. "
+    "The reformulated question should emphasize: "
+    "1. Voting patterns and legislative priorities "
+    "2. Party alignment and instances of cross-party voting "
+    "3. Focus areas in policy-making and bill sponsorship "
+    "4. Consistency or evolution of positions on key issues "
+    "Do NOT answer the question, only reformulate it if needed to maximize relevant information retrieval from congressional records."
 )
 
-# Main QA prompt
+# Main QA prompt optimized for congressional data analysis
 qa_prompt = ChatPromptTemplate.from_messages([
-    ("system", """You are analyzing personal journal entries to extract meaningful insights and patterns. 
+    ("system", """You are analyzing congressional data including voting records, bill information, and representative profiles. 
     When analyzing the provided context:
-    1. Focus on patterns and themes that are explicitly evidenced in the entries
-    2. Connect related insights across different time periods
-    3. Identify recurring behaviors, thoughts, and emotional patterns
-    4. Note significant changes or transformations over time
+    1. Focus on factual voting patterns and legislative behavior that is evident in the records
+    2. Identify consistent policy positions and any notable deviations
+    3. Note relationships between party affiliation and voting behavior
+    4. Provide insights on legislative priorities based on voting history and bill engagement
+    5. Avoid speculation beyond what the data supports
     
-    If certain aspects aren't directly supported by the context, focus on what is available in the provided entries."""),
+    When discussing representatives' positions, remain politically neutral and focus only on the data presented."""),
     HumanMessagePromptTemplate.from_template(
-        """Based on these journal entries and their context:
+        """Based on these congressional records:
         {context}
         
         Provide an analysis addressing: {input}
         
-        Focus on insights and patterns that are specifically supported by the provided entries."""
+        Focus on insights and patterns that are specifically supported by the provided voting records and biographical information."""
     ),
     MessagesPlaceholder(variable_name="chat_history")
 ])
@@ -51,10 +51,9 @@ contextualize_q_prompt = ChatPromptTemplate.from_messages([
     HumanMessagePromptTemplate.from_template(
         "Previous chat context: {chat_history}\n"
         "Current analysis request: {input}\n"
-        "Reformulated question for context retrieval:"
+        "Reformulated question for congressional data retrieval:"
     )
 ])
-
 
 from model_factory import ModelFactory
 

@@ -2,34 +2,15 @@ import streamlit as st
 from api_utils import upload_document, list_documents, delete_document
 
 def display_sidebar():
-    # Model Selection
-    model_options = {
-        "GPT-4": "gpt-4",          # Display name : actual value
-        "LLaMA 3.1": "llama-3.1",
-        "Claude": "claude"          # Added Claude and removed GEMINI
-    }
+    # Set model value directly without selection UI
+    st.session_state.model = "llama-3.1"  # Keep consistent with ModelName enum
     
-    # Get display name from value if exists in session state
-    current_model = st.session_state.get("model", "gpt-4")
-    current_display_name = "GPT-4"  # default
-    for display_name, value in model_options.items():
-        if value == current_model:
-            current_display_name = display_name
-            break
+    # Display model info 
+    st.sidebar.info("Using LLaMA 3.3 70B Versatile model")
     
-    selected_model = st.sidebar.selectbox(
-        "Select Model", 
-        options=list(model_options.keys()),
-        key="model_select",
-        index=list(model_options.keys()).index(current_display_name)
-    )
-    
-    # Store actual value in session state
-    st.session_state.model = model_options[selected_model]
-
     # Document Upload Section
     st.sidebar.header("Upload Document")
-    uploaded_file = st.sidebar.file_uploader("Choose a file", type=["pdf", "docx", "html"])
+    uploaded_file = st.sidebar.file_uploader("Choose a file", type=["pdf", "docx", "html", "txt"])
     if uploaded_file is not None:
         if st.sidebar.button("Upload"):
             with st.spinner("Uploading..."):

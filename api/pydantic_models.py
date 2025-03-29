@@ -4,14 +4,13 @@ from datetime import datetime
 from typing import Optional, Dict, List
 
 class ModelName(str, Enum):
-    GPT4 = "gpt-4"  
-    LLAMA = "llama-3.1"
-    CLAUDE = "claude"
+    LLAMA = "llama-3.1"  # Keeping the same value for API consistency
 
 class QueryInput(BaseModel):
     question: str
     session_id: Optional[str] = None  # Optional with None default
-    model: ModelName = ModelName.GPT4  # Default model
+    model: ModelName = ModelName.LLAMA  # Default to LLaMA
+    
 
 class QueryResponse(BaseModel):
     answer: str
